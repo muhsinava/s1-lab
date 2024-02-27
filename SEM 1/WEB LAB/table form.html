@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Table</title>
+        <script type="text/javascript">
+         function ver()
+         {
+            if(document.forms.F1.N1.value=="")
+            {
+               window.alert("Enter First Name");
+               document.forms.F1.N1.Focus();
+            }
+            else if(document.forms.F1.N2.value==""){
+               window.alert("Enter lastname");
+               document.forms.F1.N2.Focus();
+            }
+            else if(document.forms.F1.N3.value==""){
+               window.alert("Enter Phonenumber")
+               document.forms.F1.N3.Focus();
+            }
+            else if(document.forms.F1.N4.value==""){
+               window.alert("Enter Date Of Birth")
+               document.forms.F1.N4.Focus();
+            }
+            else if(document.forms.F1.N5.value==""){
+               window.alert("Enter email id")
+               document.forms.F1.N5.Focus();
+            }
+
+               return false;
+         }
+        </script>
+    </head>
+      <body>
+        <center>
+         <form id="F1" onsubmit= "return ver()" action="table form.html">
+        <table border="1" height="30px" bgcolor="">
+             <br><br><br><br>
+
+            <h1>REGISTRATION FORM</h1>
+
+             <tr>
+                <td>FirstName</td>
+                <td><input type="text" id="N1"></td>
+             </tr>
+              
+             <tr>
+                <td>LastName</td>
+                <td><input type="text" id="N2"></td>
+             </tr> 
+
+             <tr>
+                <td>PhoneNo:</td>
+                <td><input type="text" id="N3"></td>
+             </tr>
+            
+             <tr>
+                <td>DOB</td>
+                <td><input type="date" id="N4"></td>
+             </tr>
+
+             <tr>
+                <td>Email</td>
+                <td><input type="email" id="N5"></td>
+             </tr>
+
+             <tr>
+                <td>Password</td>
+                <td><input type="password" id="N6" required></td>
+             </tr> 
+
+             <tr>
+                
+                <td colspan="2"><center><input type="submit" value="Sign In"></center></td>
+             </tr>
+
+        </table>
+        Already have an Account?  <a href="sample form.html">Login Here!</a>
+        </center>
+      </form>
+        <!-- <img src="C:\Users\Administrator\Pictures\Screenshots\img1.png" alt="image" width="500px" height="400px"> -->
+      </body>
+</html>
